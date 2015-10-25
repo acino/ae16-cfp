@@ -1,0 +1,97 @@
+body {
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    color: white;
+}
+
+.offset-top-48 {
+    margin-top: 48px
+}
+
+.offset-top-96 {
+    margin-top: 96px;
+}
+
+/***/
+
+.black {
+    color: black;
+}
+
+.white {
+    color: white;
+}
+
+.no-left-spacing {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.no-right-spacing {
+    margin-right: 0;
+    padding-right 0;
+}
+
+
+/* New button colors */
+
+.vba-btn {
+    background: #FF6E40;
+    color: #FFF;
+    box-shadow: 0px 2px 0 rgba(0, 0, 0, 0.2);
+    height: 40px;
+    line-height: 26px;
+}
+
+.vba-btn:hover {
+    box-shadow: 0px 2px 0 rgba(0, 0, 0, 0.4);
+    color: #EEE;
+}
+
+/** Top of the page **/
+
+header {
+    line-height: 0.85;
+}
+
+.vba-pre-title {
+    font-size: 20px;
+}
+
+.vba-title {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+@media (min-width: 480px) {
+    .vba-pre-title {
+        font-size: 20px;
+    }
+    .vba-title {
+        font-size: 36px;
+    }
+}
+@media (min-width: 768px) {
+    .vba-pre-title {
+        font-size: 30px;
+    }
+    .vba-title {
+        font-size: 46px;
+    }
+
+    .sponsor-logo {
+        max-width: 335px;
+        max-height: 130px;
+    }
+}
+
+/* Sponsor logos */
+.sponsor-logo {
+    display: block;
+    opacity: 0.8;
+
+    transition: all 0.5s ease;
+}
+
+.sponsor-logo:hover {
+    opacity: 1;
+}
