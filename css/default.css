@@ -85,13 +85,13 @@ header {
 }
 
 /* Sponsor logos */
-.sponsor-logo {
+.spnsr-logo {
     display: block;
     opacity: 0.8;
 
     transition: all 0.5s ease;
 }
 
-.sponsor-logo:hover {
+.spnsr-logo:hover {
     opacity: 1;
 }
