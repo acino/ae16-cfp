@@ -3,6 +3,10 @@ body {
     color: white;
 }
 
+.offset-top-24 {
+    margin-top: 24px;
+}
+
 .offset-top-48 {
     margin-top: 48px
 }
@@ -28,9 +32,13 @@ body {
 
 .no-right-spacing {
     margin-right: 0;
-    padding-right 0;
+    padding-right: 0;
 }
 
+
+section > h1:first-child {
+    margin-top: 0;
+}
 
 /* New button colors */
 
@@ -62,12 +70,31 @@ header {
     font-weight: bolder;
 }
 
+.vba-date {
+    font-size: 16px;
+}
+
+@media(max-width: 720px) {
+    .keynote-speaker-image {
+        float: none !important;
+        margin: 0 auto;
+    }
+    .keynote-speaker-bio {
+        float: none;
+        margin-left: 0 !important;
+    }
+}
+
 @media (min-width: 480px) {
     .vba-pre-title {
         font-size: 20px;
     }
     .vba-title {
         font-size: 36px;
+    }
+
+    .vba-date {
+        font-size: 18px;
     }
 }
 @media (min-width: 768px) {
@@ -76,6 +103,10 @@ header {
     }
     .vba-title {
         font-size: 46px;
+    }
+
+    .vba-date {
+        font-size: 20px;
     }
 
     .sponsor-logo {
@@ -94,4 +125,27 @@ header {
 
 .spnsr-logo:hover {
     opacity: 1;
+}
+
+
+/* Keynote speaker */
+.keynote-speaker-image {
+    width: 256px;
+    height: 256px;
+    border-radius: 128px;
+    border: 2px solid rgba(255,255,255,0.64);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.32);
+
+    display: block;
+    float: left;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.keynote-speaker-bio {
+    margin-left: calc(256px + 16px);
+    min-height: 272px;
+
+    display: flex;
+    align-items: center;
 }
