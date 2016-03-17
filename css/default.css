@@ -3,6 +3,14 @@ body {
     color: white;
 }
 
+a {
+  color: black;
+}
+
+a:hover {
+  color: #333;
+}
+
 .offset-top-24 {
     margin-top: 24px;
 }
