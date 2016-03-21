@@ -82,6 +82,28 @@ header {
     font-size: 16px;
 }
 
+/* Keynote speaker */
+.keynote-speaker-image {
+    width: 256px;
+    height: 256px;
+    border-radius: 128px;
+    border: 2px solid rgba(255,255,255,0.64);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.32);
+
+    display: block;
+    float: left;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.keynote-speaker-bio {
+    margin-left: calc(256px + 16px);
+    min-height: 272px;
+
+    display: flex;
+    align-items: center;
+}
+
 @media(max-width: 720px) {
     .keynote-speaker-image {
         float: none !important;
@@ -89,8 +111,23 @@ header {
     }
     .keynote-speaker-bio {
         float: none;
-        margin-left: 0 !important;
+        margin-left: 0;
+        margin-top: 16px;
     }
+
+    .student-sponsorship-buttons > a {
+      display: inline-block;
+
+      margin-top: 8px;
+      margin-left: 0;
+    }
+}
+
+@media(max-width: 480px) {
+  .student-sponsorship-buttons > a {
+    clear: both;
+    float: left;
+  }
 }
 
 @media (min-width: 480px) {
@@ -103,6 +140,10 @@ header {
 
     .vba-date {
         font-size: 18px;
+    }
+
+    .student-sponsorship-buttons > :not(:first-child) {
+      margin-left: 8px;
     }
 }
 @media (min-width: 768px) {
@@ -133,27 +174,4 @@ header {
 
 .spnsr-logo:hover {
     opacity: 1;
-}
-
-
-/* Keynote speaker */
-.keynote-speaker-image {
-    width: 256px;
-    height: 256px;
-    border-radius: 128px;
-    border: 2px solid rgba(255,255,255,0.64);
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.32);
-
-    display: block;
-    float: left;
-    margin-top: 8px;
-    margin-bottom: 8px;
-}
-
-.keynote-speaker-bio {
-    margin-left: calc(256px + 16px);
-    min-height: 272px;
-
-    display: flex;
-    align-items: center;
 }
