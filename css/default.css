@@ -105,6 +105,9 @@ header {
 }
 
 @media(max-width: 720px) {
+    body {
+      padding: 8px;
+    }
     .keynote-speaker-image {
         float: none !important;
         margin: 0 auto;
